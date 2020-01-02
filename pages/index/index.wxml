@@ -1,0 +1,35 @@
+<view class='container'>
+  <!--区域1-->
+  <picker mode='region' bindchange='changeRegion'>
+    <view>{{region}}</view>
+  </picker>
+  <!--区域2-->
+  <text>{{now.tmp}}°C {{now.cond_txt}}</text>
+  <!--区域3-->
+  <image src='/images/cond-icon-heweather/{{now.cond_code}}.png'></image>
+  <!--区域4-->
+  <view class='detail'>
+    <view class='bar'>
+      <view class='box'>湿度</view>
+      <view class='box'>气压</view>
+      <view class='box'>能见度</view>
+    </view>
+    <view class='bar'>
+      <view class='box'>{{now.hum}}</view>
+      <view class='box'>{{now.pres}}</view>
+      <view class='box'>{{now.vis}}</view>
+    </view>
+    <view class='bar'>
+      <view class='box'>风向</view>
+      <view class='box'>风速</view>
+      <view class='box'>风力</view>
+    </view>
+    <view class='bar'>
+      <view class='box'>{{now.wind_dir}}</view>
+      <view class='box'>{{now.wind_spd}}</view>
+      <view class='box'>{{now.wind_sc}}</view>
+    </view>
+  </view>
+</view>
+
+
